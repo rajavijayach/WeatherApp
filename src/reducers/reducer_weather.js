@@ -5,7 +5,5 @@ export default function (state =[], action ){
         case FETCH_WEATHER:
         return [ action.payload.data, ...state ];// ES6 . it gives like [city,ctiy,city]
     }
-
-
     return state;
 }
